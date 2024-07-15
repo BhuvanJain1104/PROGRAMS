@@ -1,10 +1,3 @@
-# Python3 program to check for
-# balanced brackets.
-
-# function to check if
-# brackets are balanced
-
-
 def areBracketsBalanced(expr):
     stack = []
 
@@ -16,9 +9,7 @@ def areBracketsBalanced(expr):
             stack.append(char)
         else:
 
-            # IF current character is not opening
-            # bracket, then it must be closing.
-            # So stack cannot be empty at this point.
+            
             if not stack:
                 return False
             current_char = stack.pop()
